@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7ddc5dbc5f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="index.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p> Web Developer</p>
+            <h1>Hi, I'm <span>Prabakaran
+            </span><br> From India</h1>
+        </div>
+    </div>
+</div> 
+<!--------------about------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1><br><br>
+                <p>Hello, my name is prabakaran and I am a web developer with 2 years of experience in designing and developing responsive and user-friendly websites.
+                     My expertise includes working with HTML, CSS, JavaScript, and other front-end technologies to create visually appealing and functional websites that meet the needs of clients and end-users.
+                      I am also familiar with back-end technologies such as PHP and MySQL, which allow me to develop dynamic and database-driven web applications. 
+                      I am passionate about keeping up with the latest web development trends and technologies and I am always looking for new and innovative ways to enhance the user experience. 
+                      I am excited to bring my skills and expertise to new projects and collaborate with clients to bring their vision to life." 
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021</span><br>B.E at SJCE</li>
+                        <li><span>2022</span><br>B.E at SJCE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----services---------->
+<div id="services">
+    <div class=""container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design is the art and science of creating websites that are visually appealing and functional. 
+                    It encompasses various elements such as layout, color schemes, typography, and user experience to engage and inform visitors. 
+                    Web designers blend creativity and technical expertise to bring brands and ideas to life on the digital platform.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>App design involves the creation of intuitive and visually compelling user interfaces (UI) for mobile applications. 
+                    It combines the principles of user experience (UX) design, visual design, and interaction design to create seamless and engaging experiences for app users. 
+                    App designers strive to balance aesthetics, usability, and functionality to deliver a cohesive and enjoyable user experience on mobile devices.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-----portfolio-------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img5.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you the talented people around the world.
+                        Download it from play store.</p>
+                    <a href="https://www.instagram.com/"><i class="fa-solid fa-up-right-from-square"></i></a>    
+                </div>
+            </div>
+            <div class="work">
+                <img src="img4.jpg">
+                <div class="layer">
+                    <h3> Music App</h3>
+                    <p>The app helps you to hear good songs.
+                        Download it from play store.</p>
+                    <a href="https://open.spotify.com/"><i class="fa-solid fa-up-right-from-square"></i></a>    
+                </div>
+            </div>
+            <div class="work">
+                <img src="img3.jpg">
+                <div class="layer">
+                    <h3>Online Shopping  App</h3>
+                    <p>The app helps you to buy things in online which make things easier.
+                        Download it from play store.</p>
+                    <a href="https://www.amazon.in/"><i class="fa-solid fa-up-right-from-square"></i></a>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---contact---->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>prabakaran7637@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9751987995</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br><br>
+                    <button class="pill-button" type="button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
